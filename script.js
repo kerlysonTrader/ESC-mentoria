@@ -36,9 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctaButton = document.querySelector('.cta-button');
     
     ctaButton.addEventListener('click', function() {
-        // Aqui você pode adicionar a lógica para redirecionar para a página de checkout
-        // ou abrir um modal de inscrição
-        alert('Redirecionando para a página de inscrição...');
+        // Substitua esta URL pela URL do seu checkout
+        window.location.href = 'https://seu-link-de-checkout.com';
     });
 
     // Manipulação do vídeo

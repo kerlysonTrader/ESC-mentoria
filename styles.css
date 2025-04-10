@@ -190,6 +190,49 @@ footer {
     text-align: center;
 }
 
+/* Social Proof Section */
+.social-proof {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.proof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.proof-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proof-item:hover {
+    transform: translateY(-5px);
+}
+
+.proof-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.proof-text {
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+.proof-author {
+    padding: 0 20px 20px;
+    font-weight: bold;
+    color: #333;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .hero h1 {
@@ -203,6 +246,10 @@ footer {
     .checklist,
     .benefits-grid,
     .bonus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .proof-grid {
         grid-template-columns: 1fr;
     }
 } 
